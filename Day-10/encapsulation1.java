@@ -1,0 +1,30 @@
+class BankAccount{
+    private double balance;
+    public void setBalance(double balance){
+        if(balance>0){
+        this.balance=balance;
+        }
+        else{
+            System.out.print("Input not valid");
+        }
+    }
+
+    public void withdraw(int amount){
+          if(amount>0&&amount<=balance){
+            balance-=amount;
+            System.out.println("Amount debited:"+amount);
+          }
+          else{
+            System.out.println("invalid amount entered");
+          }
+    }
+     public void deposit(int amount){
+          if(amount>0){
+            balance+=amount;
+            System.out.println("Amount credited:"+amount);
+          }
+          else{
+            System.out.println("invalid amount entered");
+          }
+    }
+}
