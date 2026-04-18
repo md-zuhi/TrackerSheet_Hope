@@ -8,7 +8,7 @@ class Solution {
         reverse(nums,k,len-1);
     }
     public int[] reverse(int[] n, int start, int end){
-        while(start<end){
+        while(start<end){      {10,20,30,40,50,60}    {50,40,30,20,10}
             int temp  = n[start];
             n[start] = n[end];
             n[end] = temp;
